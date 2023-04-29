@@ -8,39 +8,39 @@ Fazer um algoritmo que leia:
 o número do empregado (código)
 o ano do seu nascimento
 ano de ingresso na empresa
-O programa deve escrever a idade e o tempo de trabalho do empregado e a mensagem "Requer aposentadoria" ou "Não requer aposentadoria".
+O programa deve escrever a idade e o tempo de trabalho do empregado e a mensidadem "Requer aposentadoria" ou "Não requer aposentadoria".
 */
 
 #include <stdio.h>
 
 int main(){
 
-    int code, born, age, ingressDate, workTime;
-    char name[50];
+    int cod, ano, idade, data, hora;
+    char nome[50];
 
     printf("Digite o nome: \n");
-    scanf("%s", &name);
+    scanf("%s", &nome);
 
     printf("Digite o ano de nascimento: \n");
-    scanf("%d", &born);
+    scanf("%d", &ano);
 
     printf("Digite o ano de ingresso na empresa: \n");
-    scanf("%d", &ingressDate);
+    scanf("%d", &data);
 
-    age = 2022 - born;
-    workTime = 2022 - ingressDate;
+    idade = 2022 - ano;
+    hora = 2022 - data;
 
-    if(age >= 65 || workTime >= 30 || (age >= 60 && workTime >= 25)){
+    if(idade >= 65 || hora >= 30 || (idade >= 60 && hora >= 25)){
 
-        printf("Idade: %d\n", age);
-        printf("Tempo de trabalho: %d\n", workTime);
+        printf("Idade: %d\n", idade);
+        printf("Tempo de trabalho: %d\n", hora);
         printf("-----------------------------------\n");
         printf("Requerer aposentadoria");
     }
     else{
 
-        printf("Idade: %d\n", age);
-        printf("Tempo de trabalho: %d\n", workTime);
+        printf("Idade: %d\n", idade);
+        printf("Tempo de trabalho: %d\n", hora);
         printf("-----------------------------------\n");
         printf("Nao requerer aposentadoria");
     }

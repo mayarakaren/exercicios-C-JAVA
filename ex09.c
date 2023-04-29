@@ -4,75 +4,75 @@
 
 int main(){
     
-    int sexCode;
+    int sexo;
 
-    double altura, peso, imc, 
-    underFem = 19.1, 
-    underMasc = 20.7, 
-    idealFem = 25.8, 
-    idealMasc = 26.4, 
-    sftOverFem = 27.3, 
-    sftOverMasc = 27.8,
-    overFem = 32.3,
-    overMasc = 31.1;
+    double alt, peso, imc, 
+    fem1 = 19.1, 
+    masc1 = 20.7, 
+    fem2 = 25.8, 
+    masc2 = 26.4, 
+    fem3 = 27.3, 
+    mas3 = 27.8,
+    fem4 = 32.3,
+    masc4 = 31.1;
 
     printf("Digite o codigo correspondente ao sexo: \n 1 - Feminino\n 2 - Masculino\n");
-    scanf("%d", &sexCode);
+    scanf("%d", &sexo);
 
     printf("Digite o peso: \n");
     scanf("%lf", &peso);
 
-    printf("Digite a altura: \n");
-    scanf("%lf", &altura);
+    printf("Digite a alt: \n");
+    scanf("%lf", &alt);
 
-    imc = (peso / pow(altura, 2));
+    imc = (peso / pow(alt, 2));
     
     printf("IMC = %lfkg/m2\n", imc);
 
-    if(sexCode == 1){
+    if(sexo == 1){
 
-        if (imc < underFem)
+        if (imc < fem1)
         {
 
            printf("Abaixo do peso"); 
         } 
-        else if((imc == underFem || imc > underFem) && (imc < idealFem || imc == idealFem)){
+        else if((imc == fem1 || imc > fem1) && (imc < fem2 || imc == fem2)){
 
            printf("Peso normal"); 
         }
-        else if((imc > idealFem) && (imc < sftOverFem || imc == sftOverFem)){
+        else if((imc > fem2) && (imc < fem3 || imc == fem3)){
 
            printf("Marginalmente acima do peso ideal"); 
         }  
-        else if((imc > sftOverFem) && (imc < overFem || imc == overFem)){
+        else if((imc > fem3) && (imc < fem4 || imc == fem4)){
 
            printf("Acima do peso ideal"); 
         }  
-        else if(imc > overFem){
+        else if(imc > fem4){
 
            printf("Obesa"); 
         }  
     } 
-    if(sexCode == 2){
+    if(sexo == 2){
 
-        if (imc < underMasc)
+        if (imc < masc1)
         {
 
            printf("Abaixo do peso"); 
         } 
-        else if((imc == underMasc || imc > underMasc) && (imc < idealMasc || imc == idealMasc)){
+        else if((imc == masc1 || imc > masc1) && (imc < masc2 || imc == masc2)){
 
            printf("Peso normal"); 
         }
-        else if((imc > idealMasc) && (imc < sftOverMasc || imc == sftOverMasc)){
+        else if((imc > masc2) && (imc < mas3 || imc == mas3)){
 
            printf("Marginalmente acima do peso ideal"); 
         }  
-        else if((imc > sftOverMasc) && (imc < overMasc || imc == overMasc)){
+        else if((imc > mas3) && (imc < masc4 || imc == masc4)){
 
            printf("Acima do peso ideal"); 
         }  
-        else if(imc > overMasc){
+        else if(imc > masc4){
 
            printf("Obeso"); 
         }  

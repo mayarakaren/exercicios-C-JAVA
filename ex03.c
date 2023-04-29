@@ -1,23 +1,23 @@
-//Escrever um algoritmo que leia n números e efetue a multiplicação entre o atual e o anterior. A condição de saída será quando o usuário digitar 0.
+//Escrever um algoritmo que leia n números e efetue a multiplicação entre o atual e o ant. A condição de saída será quando o usuário digitar 0.
 
 #include <stdio.h>
 
 int main(){
 
-    int n, atual, anterior = 1, result, stop = 0, i = 0;
+    int num, atual, ant = 1, res, parar = 0, i = 0;
 
-    while(n != stop){
+    while(n != parar){
         
         printf("Digite um numero: ");
         scanf("%d", &n);
         
-        atual = n;
+        atual = num;
        
-        if(atual != stop){
-            result = atual * anterior;
-            anterior = result;
+        if(atual != parar){
+            res = atual * ant;
+            ant = res;
         } 
-        printf("%d\n", result);
+        printf("%d\n", res);
 
         i++;
     }

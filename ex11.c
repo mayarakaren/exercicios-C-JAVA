@@ -10,42 +10,42 @@ Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustí
 
 int main(){
 
-    double litros, glPrice = 3.30, alPrice = 2.90, price, finalPrice;
-    int type;
+    double litros, glPreco = 3.30, alPreco = 2.90, preco, finalPreco;
+    int tipo;
 
     printf("Digite o tipo de combustivel: \n 1 - Alcool\n 2 - Gasolina");
-    scanf("%d", &type);
+    scanf("%d", &tipo);
 
     printf("Digite a quantidade em litros: \n");
     scanf("%lf", &litros);
 
     
-    if(type == 1){
+    if(tipo == 1){
 
-        price = litros * alPrice;
+        preco = litros * alPreco;
 
         if(litros <= 20){
 
-            finalPrice = price - (price * 0.04);
+            finalPreco = preco - (preco * 0.04);
 
-            printf("Preco: R$%lf\n", finalPrice);
+            printf("Preco: R$%lf\n", finalPreco);
         }
         else if(litros > 20){
 
-            finalPrice = price - (price * 0.05);
+            finalPreco = preco - (preco * 0.05);
 
-            printf("Preco: R$%lf", finalPrice);
+            printf("Preco: R$%lf", finalPreco);
         }
     }
-    else if(type == 2){
+    else if(tipo == 2){
 
-        price = litros * glPrice;
+        preco = litros * glPreco;
 
         if(litros <=20){
 
-            finalPrice = price - (price * 0.06);
+            finalPreco = preco - (preco * 0.06);
 
-            printf("Preco: R$%lf", finalPrice);
+            printf("Preco: R$%lf", finalPreco);
         }
     }
 }

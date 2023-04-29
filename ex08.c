@@ -4,17 +4,17 @@
 
 int main(){
 
-    int i = 0, sum, avg;
+    int i = 0, soma, media;
 
     while(i <= 100){
 
-        sum = 15 + (15 + i);
+        soma = 15 + (15 + i);
 
         i++;
     }
 
-    avg = sum / (100 - 14);
+    media = soma / (100 - 14);
 
-    printf("A media aritmetica dos numeros entre 15 e 100 (incluindo eles) eh: %d\n", avg);
+    printf("A media aritmetica dos numeros entre 15 e 100 (incluindo eles) eh: %d\n", media);
 
 }

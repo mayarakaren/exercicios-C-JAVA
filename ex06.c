@@ -4,23 +4,23 @@
 
 int main(){
 
-    int i = 1, a, b, newA, potency;
+    int i = 1, base, expo, A, pot;
 
     printf("Digite o numero correspondente a base: \n");
-    scanf("%d", &a);
+    scanf("%d", &base);
 
     printf("Digite o numero correspondente ao expoente: \n");
-    scanf("%d", &b);   
+    scanf("%d", &expo);   
 
-    newA =  a;
+    A =  base;
 
-    while(i <= (b-1)){
+    while(i <= (expo-1)){
 
-        potency = newA * a;
-        newA = potency;
+        pot = A * base;
+        A = pot;
         
         i++;
     }
     
-    printf("O resultado da potencia é: %d\n", potency);
+    printf("O resultado da potencia é: %d\n", pot);
 }

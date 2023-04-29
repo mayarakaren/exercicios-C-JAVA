@@ -4,18 +4,18 @@
 
 int main(){
 
-    int n, i = 1, sum = 0, avg;
+    int num, i = 1, soma = 0, media;
 
     while(i <= 5){
 
         printf("Digite um numero: \n");
-        scanf("%d", &n);
+        scanf("%d", &num);
 
-        sum = (sum + n);
+        soma = (soma + num);
 
         if(i == 5){
-             avg = (sum / 5);
-            printf("A media dos numeros eh: %d\n", avg);
+             media = (soma / 5);
+            printf("A media dos numeros eh: %d\n", media);
         }
         
         i++;

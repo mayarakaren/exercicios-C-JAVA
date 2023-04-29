@@ -4,14 +4,14 @@
 
 int main(){
 
-    int numberH = 8, i = 1, product;
+    int tab = 8, i = 1, res;
 
     printf("Se liga na tabuada do 8: \n");
 
     while(i <= 10){
 
-        product = numberH * i;
-        printf("8 x %d = %d\n", i, product);
+        res = tab * i;
+        printf("8 x %d = %d\n", i, res);
 
         i++;
     }
