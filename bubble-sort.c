@@ -6,7 +6,7 @@ void main(){
     clrscr();
     //carregando os números no vetor
     for(i=0; i<=4; i++){
-        cout<<"Digite o"<<i+1<<"º número:";
+        cout<<"Digite o"<<i+1<<"° número:";
         cin>>x[i];
     }
     //ordenado de forma decrescente laço com a quantidade de elementos do vetor e enquanto houver troca
@@ -29,7 +29,7 @@ void main(){
     //mostrando o vetor ordenado
 
     for(i=0; i<=4; i++){
-        cout<<i+1<<"º número:"<<x[i]<<"\n";
+        cout<<i+1<<"° número:"<<x[i]<<"\n";
     }
     getch();
 }
